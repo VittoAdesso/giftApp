@@ -15,9 +15,10 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-// serch with click
+// search with click
   search( termino : string){
     this.gifService.gifSearch( termino );
   }
 
 }
+
