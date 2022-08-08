@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GifsService } from '../services/gifs.service';
 
 @Component({
   selector: 'app-results-ofsearch',
@@ -8,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultsOFsearchComponent implements OnInit {
 
-  constructor() { }
+  constructor( private gifService : GifsService) { }
 
+  get results() { 
+    return this.gifService.results; }
+    
   ngOnInit(): void {
   }
 

@@ -1,6 +1,10 @@
 
 <div class="row">
     <div class="col">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod quia, maiores animi aperiam esse soluta. Est unde nam autem, quaerat a, voluptatem esse error odit rerum ex perferendis ipsam quasi!
+        <ul>
+            <li *ngFor="let gifs of results">
+                {{ gifs.title}}
+            </li>
+        </ul>
     </div>
 </div>
