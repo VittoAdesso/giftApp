@@ -32,7 +32,7 @@ export class GifsService {
       .subscribe((response ) => {
         console.log(response.data);
         this.results = response.data;
-        // response.data[0].images.downsized_medium.url;
+        localStorage.setItem('results', JSON.stringify(this.results));
       });
   }
 }
