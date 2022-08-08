@@ -27,6 +27,7 @@ export class GifsService {
 
       // host & save
       localStorage.setItem('historial', JSON.stringify(this._historial));
+      localStorage.setItem('results', JSON.stringify(this.results));
     }
     this.http.get<SearchGifsResponse>(`https://api.giphy.com/v1/gifs/search?api_key=5ZYuirHeyfsl4Qd8gCmSjwqRyfJUmX44&q=${query}&limit=10`)
       .subscribe((response ) => {
