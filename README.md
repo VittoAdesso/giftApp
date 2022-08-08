@@ -17,3 +17,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Bootstrap:
 
 `https://getbootstrap.com/`
+
+Api:
+`https://developers.giphy.com/`
