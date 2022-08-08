@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { GifsService } from '../services/gifs.service';
 
 @Component({
   selector: 'app-searchbar',
@@ -8,7 +9,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class SearchbarComponent implements OnInit {
 
-  constructor() { }
+  constructor( private gifService : GifsService) { }
 
   ngOnInit(): void {
   }
@@ -17,8 +18,9 @@ export class SearchbarComponent implements OnInit {
 
   search( ): void {
     const valor = this.txtSearch.nativeElement.value;
-    console.log(valor);
+    this.gifService.gifSearch( valor); 
     this.txtSearch.nativeElement.value = ''; // to erase the input 
   }
+
 
 }
