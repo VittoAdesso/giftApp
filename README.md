@@ -12,9 +12,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build -- prod` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Bootstrap
+## Bootstrap & animate styles 
 
 `https://getbootstrap.com/`
+`https://animate.style/`
 
 ## Api
 
