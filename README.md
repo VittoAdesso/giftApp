@@ -8,6 +8,16 @@ Also you can click at the buttons to research it.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Application preview
+
+<img src="./src/assets/preview.png" with=100>
+
+If you clone it, don´t forget to 
+npm i
+
+If you clone It, don´t forget:
+`npm i`
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
