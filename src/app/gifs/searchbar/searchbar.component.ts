@@ -17,7 +17,10 @@ export class SearchbarComponent implements OnInit {
   @ViewChild('txtSearch') txtSearch!: ElementRef;
 
   search( ): void {
-    const valor = this.txtSearch.nativeElement.value;
+    const valor =this.txtSearch.nativeElement.value;
+    if( valor.trim().length === 0){
+      return; 
+    }
     this.gifService.gifSearch( valor); 
     this.txtSearch.nativeElement.value = ''; // to erase the input 
   }
